@@ -1,0 +1,74 @@
+{
+    "version": 10,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 0,
+        "patch": 0
+    },
+    "$comment": [
+        "Copyright (c) 2023-2025 Christian Hinkle, Brian Hinkle.",
+        "Includes: We have includes of utility files search from the `${sourceDir}` (which is the top-level project's directory), so that it's the responsibility of the top-level project to provide these files. We do this to avoid multiple includes to duplicate files. CMake throws an error if a preset is defined twice with the same name, but it does allow duplicate includes to the same file."
+    ],
+    "include": [
+        "${sourceDir}/CMakePresets_General/CMakePresets.json"
+    ],
+    "testPresets": [
+        {
+            "name": "meddysdk-dam-base",
+            "hidden": true,
+            "filter": {
+                "include": {
+                    "name": "MeddySDK.DAM."
+                }
+            }
+        },
+        {
+            "name": "meddysdk-dam-win-debug",
+            "displayName": "MeddySDK.DAM - Windows Debug",
+            "inherits": [
+                "meddysdk-dam-base",
+                "win-debug"
+            ]
+        },
+        {
+            "name": "meddysdk-dam-win-release",
+            "displayName": "MeddySDK.DAM - Windows Release",
+            "inherits": [
+                "meddysdk-dam-base",
+                "win-release"
+            ]
+        },
+        {
+            "name": "meddysdk-dam-linux-debug",
+            "displayName": "MeddySDK.DAM - Linux Debug",
+            "inherits": [
+                "meddysdk-dam-base",
+                "linux-debug"
+            ]
+        },
+        {
+            "name": "meddysdk-dam-linux-release",
+            "displayName": "MeddySDK.DAM - Linux Release",
+            "inherits": [
+                "meddysdk-dam-base",
+                "linux-release"
+            ]
+        },
+        {
+            "name": "meddysdk-dam-macos-debug",
+            "displayName": "MeddySDK.DAM - macOS Debug",
+            "inherits": [
+                "meddysdk-dam-base",
+                "macos-debug"
+            ]
+        },
+        {
+            "name": "meddysdk-dam-macos-release",
+            "displayName": "MeddySDK.DAM - macOS Release",
+            "inherits": [
+                "meddysdk-dam-base",
+                "macos-release"
+            ]
+        }
+    ]
+}
