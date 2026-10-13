@@ -2,13 +2,12 @@
 
 #include <MeddySDK/DAM/Utils.h>
 
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/operations.hpp>
+#include <filesystem>
 #include <cstdlib>
 #include <cassert>
 
-boost::filesystem::path MeddySDK::Thing(
-    boost::filesystem::path&& sourceFilePath)
+std::filesystem::path MeddySDK::Thing(
+    std::filesystem::path&& sourceFilePath)
 {
     assert(false);
     std::abort();

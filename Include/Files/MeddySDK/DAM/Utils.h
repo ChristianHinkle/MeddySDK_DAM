@@ -3,13 +3,13 @@
 #pragma once
 
 #include <MeddySDK_DAM_Export.h>
-#include <boost/filesystem/path.hpp>
+#include <filesystem>
 
 /**
  *
  */
 namespace MeddySDK
 {
-    MEDDYSDK_DAM_EXPORT boost::filesystem::path Thing(
-        boost::filesystem::path&& sourceFilePath);
+    MEDDYSDK_DAM_EXPORT std::filesystem::path Thing(
+        std::filesystem::path&& sourceFilePath);
 }
