@@ -3,7 +3,7 @@
 # Set this variable for the person including us to use.
 set(FILES_CMAKE_RESULT
   # List out all our include files.
-  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${MY_BASE_PROJECT_NAME_FULL}_Export.h"
-  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${MY_BASE_PROJECT_NAME_FULL}_include_export.h"
-  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${MY_BASE_PROJECT_NAME_NAMESPACE}/${MY_BASE_PROJECT_NAME_LEAFNAME}/Utils.h"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name}_Export.h"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name}_include_export.h"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name_path_format}/Utils.h"
   )
