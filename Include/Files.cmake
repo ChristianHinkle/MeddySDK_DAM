@@ -6,4 +6,5 @@ set(FILES_CMAKE_RESULT
   "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name}_Export.h"
   "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name}_include_export.h"
   "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name_path_format}/Utils.h"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Files/${my_project_name_path_format}/Utils.inl"
   )

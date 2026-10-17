@@ -5,10 +5,10 @@
 #include <filesystem>
 #include <cstdlib>
 #include <cassert>
+#include <boost/filesystem/operations.hpp>
 
-std::filesystem::path MeddySDK::Thing(
-    std::filesystem::path&& sourceFilePath)
+std::time_t MeddySDK::GetFileCreationTime(const std::filesystem::path& p)
 {
-    assert(false);
-    std::abort();
+    // [boost] We use Boost.Filesystem to get this for us.
+    return boost::filesystem::creation_time(boost::filesystem::path{p});
 }
